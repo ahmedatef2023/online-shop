@@ -1,0 +1,32 @@
+<%- include('parts/header') %>
+    <%- include('parts/navbar') %>
+        <div class="container">
+            <table class="table">
+
+                <tbody>
+
+                    <tr>
+                        <th>Name</th>
+                        <th style="color: red;">
+                            <%=user.username %>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th>Email</th>
+                        <th style="color: red;">
+                            <%=user.email%>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Account type</th>
+                        <% if(user.isAdmin){ %>
+                            <th style="color: red;"> admin</th>
+                            <% } else {%>
+                                <th style="color: red;"> client</th>
+                                <% } %>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <%- include('parts/footer') %>

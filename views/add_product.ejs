@@ -1,0 +1,35 @@
+<%- include('parts/header')%>
+<%- include('parts/navbar')  %>
+
+<div class="container text-center">
+
+    <% if(productAdded) { %>
+    <p class="alert alert-success">
+        Product added successfully
+    </p>
+    <% } %>
+
+    <h3>Add Product</h3>
+    <form action="/admin/add" method="POST" enctype="multipart/form-data">
+        <br>
+        <input type="text" class="form-control" name="name" placeholder="Name">
+       <br>
+        <input type="number" class="form-control" name="price" placeholder="Price">
+       <br>
+        <textarea type="text" class="form-control" name="description" placeholder="Description"></textarea>
+       <br>
+        <select type="text" class="form-control" name="category">
+            <option value="" selected>Choose a category</option>
+            <option value="clothes">Clothes</option>
+            <option value="phones">Phones</option>
+            <option value="computers">Computers</option>
+        </select>
+        <br>
+        <input type="file" class="form-control" name="file" placeholder="Image">
+        <br>
+        <input type="submit" value="Add Product" class="btn btn-primary">
+    </form>
+    
+</div>
+
+<%- include('parts/footer')%>

@@ -1,0 +1,30 @@
+<%- include('parts/header')%>
+
+
+<div class="container text-center">
+    <h3>Login</h3>
+    
+    <% if (errr.length!=0) {%>
+        <p class="alert alert-danger"><%=errr %></p>
+        <% } %>
+        <% for (let r of errrr) {%>
+            <p class="alert alert-danger"><%=r.msg %></p>
+            <% } %>
+    
+        
+    <form action="/login" method="POST">
+        <br>
+        <input type="email" class="form-control" name="email" placeholder="E-mail" required>
+        <br>
+        <input type="password" class="form-control" name="password" placeholder="Password" required>
+        <br>
+        <input type="submit" value="Login" class="btn btn-primary">
+    </form>
+    
+    <br>
+    <div>
+        Don't have account ? <a href="/signup">Create Account</a>
+    </div>
+</div>
+
+<%- include('parts/footer')%>
