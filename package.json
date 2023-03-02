@@ -10,6 +10,7 @@
   "author": "ahmedAtef",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.1326.0",
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.1",
     "connect-flash": "^0.1.1",
@@ -27,8 +28,7 @@
     "validator": "^13.9.0"
   },
   "engines": {
-      "node": "18.13.0",
-      "npm": "8.19.3"
+    "node": "18.13.0",
+    "npm": "8.19.3"
   }
-
 }

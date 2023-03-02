@@ -7,8 +7,9 @@
         <p class="alert alert-danger">There is no items</p>
     <% } else { %>
     
-        <table class="table">
-        <thead>
+        <div class="table-responsive" id="no-more-tables">
+            <table class="table bg-white">
+                <thead class="bg-dark text-light">
             <tr>
                 <th>no</th>
                 <th>Product name</th>
@@ -43,6 +44,7 @@
                 <% } %>
             </tbody>
         </table>
+        </div>
 
     <% } %>
 </div>
