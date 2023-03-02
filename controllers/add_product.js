@@ -7,7 +7,7 @@ const multer =require('multer')
 
 const storage =multer.diskStorage({
     destination: (req,file,cb)=>{
-        cb(null,'./upload_img')
+        cb(null,'./tmp')
     },
     filename: (req,file,cb)=>{
         const fileName=Date.now()+'_'+file.originalname.replace(/\s+/,'-')
