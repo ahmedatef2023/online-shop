@@ -6,7 +6,7 @@
             <% if(items.length===0) { %>
                 <p class="alert alert-danger">There is no items</p>
                 <% } else { %>
-                    <section class="bg-light p-5">
+                    <br>
                         <div class="table-responsive" id="no-more-tables">
                             <table class="table bg-white">
                                 <thead class="bg-dark text-light">
@@ -18,7 +18,7 @@
                                     <th>Total</th>
                                     <th>Address</th>
                                     <th>Status</th>
-                                    <th></th>
+                                    <th>Action</th>
                                 </thead>
                                 <tbody>
                                     <% for (let i=0; i < items.length; i++) { %>
@@ -33,13 +33,13 @@
                                                     <%= items[i].name %>
                                                 </a> </td>
                                             <td>
-                                                <%= items[i].price %> $
+                                                <%= items[i].price %> EGP
                                             </td>
                                             <td>
                                                 <%= items[i].amount %>
                                             </td>
                                             <td>
-                                                <%= items[i].price * items[i].amount %> $
+                                                <%= items[i].price * items[i].amount %> EGP
                                             </td>
                                             <td>
                                                 <%= items[i].address %>
@@ -75,7 +75,7 @@
                                 </tbody>
                             </table>
                         </div>
-                    </section>
+                    
                     <% } %>
 
 
