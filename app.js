@@ -28,7 +28,7 @@ app.use(
 )
 
 app.use(express.static(path.join(__dirname,'assets')))
-app.use(express.static(path.join(__dirname,'upload_img')))
+app.use(express.static(path.join(__dirname,'tmp')))
 app.set('view engine','ejs')
 
 app.set('views','views')
