@@ -1,1 +1,2 @@
-# online-shop web server
+# online-shop (web server)
+# Tools: NodeJS, Express, MongoDB, Mongoose.
